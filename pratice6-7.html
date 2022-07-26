@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>실습문제 6-7</title>
+    <script>
+        function compare(n) {
+            var m = parseInt(n);
+            var max = 0;
+            var min = m%10
+            while (true) {
+                m = m/10
+                if (m<10)
+                    break;
+            }
+            max = Math.floor(m)
+            if (max == min) 
+                document.write(n + ": 같음");
+            else 
+                document.write(n + ": 다름")
+        }
+    </script>
+</head>
+<body>
+    <h3>큰 자리수와 낮은자리수 같은지 비교</h3>
+    <hr>
+    <script>
+        var n = prompt("숫자 입력");
+        compare(n);
+    </script>
+</body>
+</html>
